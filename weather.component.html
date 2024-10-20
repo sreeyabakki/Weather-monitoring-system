@@ -1,0 +1,31 @@
+<div>
+    <h1>Weather Monitoring System</h1>
+    <div>
+      <input [(ngModel)]="cityName" placeholder="Enter city name">
+      <button (click)="onSubmit()">Get Weather</button>
+    </div>
+  
+    <div *ngFor="let city of cities">
+      <h2>{{ city }}</h2>
+      <div *ngIf="weatherData[city]">
+        <p>Temperature: {{ weatherData[city].temperature }}°C</p>
+        <p>Condition: {{ weatherData[city].condition }}</p>
+        <p>Humidity: {{ weatherData[city].humidity }}%</p>
+        <p>Wind Speed: {{ weatherData[city].windSpeed }} m/s</p>
+        <p>Feels Like: {{ weatherData[city].feelsLike }}°C</p>
+        <p>Cloudiness: {{ weatherData[city].cloudiness }}%</p>
+      </div>
+      <div *ngIf="!weatherData[city]">Weather data not available.</div>
+    </div>
+  
+    <h2>Daily Weather Summaries</h2>
+    <div *ngFor="let summary of dailySummaries">
+      <p>Date: {{ summary.date }}</p>
+      <p>Average Temperature: {{ summary.avgTemp }}°C</p>
+      <p>Max Temperature: {{ summary.maxTemp }}°C</p>
+      <p>Min Temperature: {{ summary.minTemp }}°C</p>
+      <p>Dominant Condition: {{ summary.dominantCondition }}</p>
+    </div>
+  </div>
+  
+  

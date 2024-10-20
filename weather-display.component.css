@@ -1,0 +1,60 @@
+/* Add this to your weather-display.component.css */
+.weather-card {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  }
+  .weather-card h2 {
+    margin-bottom: 10px;
+  }
+  .spinner-border {
+    margin: 20px 0;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3rem;
+  }
+  .container {
+    margin-top: 20px;
+  }
+  .input-group-lg .form-control {
+    font-size: 1.25rem; /* Enlarge input text */
+    padding: 1rem; /* Increase padding */
+  }
+  
+  .btn-lg {
+    padding: 1rem 1.5rem; /* Enlarge button size */
+    font-size: 1.5rem; /* Enlarge button text */
+  }
+  
+  .card-text {
+  font-size: 1.3rem;  /* Slightly larger text */
+}
+
+.input-group-lg .form-control {
+  font-size: 1.3rem;  /* Larger input field */
+}
+
+.input-group-lg .btn {
+  font-size: 1.3rem;  /* Larger button */
+}
+
+.card-body {
+  padding: 1.2rem;  /* Slightly more padding */
+}
+.d-flex{
+flex-direction: column;
+}
+h1 {
+  font-size: 3rem;  /* Large city name */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 0.5rem;
+  }
+}
